@@ -1,0 +1,101 @@
+body{
+    font-family: "Gupter", sans-serif;
+
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+
+.carrosel{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+.informações{
+    display: none;
+}
+
+.informações.ativa{
+    display: block;
+}
+
+.conteudo{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 100vh;
+}
+.informações h1{
+
+    font-size: 35px;
+    color: white; /* Cor do texto */
+    text-shadow: 4px 6px 5px black; 
+    margin-bottom: 80px;
+
+}
+
+.informações .descrição{
+
+    font-size: 20px;
+    color: white; /* Cor do texto */
+    text-shadow: 
+        -1px -1px 0px black,  
+        1px -1px 0px black,
+        -1px 1px 0px black,
+        1px 1px 0px black; /* Contorno preto ao redor do texto */
+    font-weight: bold; /* Negrito */
+ 
+    width: 49%;
+    line-height: 40px;
+    height: 300px;
+    overflow: auto;
+    padding-right: 15px;
+
+}
+
+.botoes-carrosel{
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.botoes-carrosel .botao{
+    background-color: aliceblue;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.botoes-carrosel .botao.selecionado{
+    background-color: rgb(9, 36, 11);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    border-color:rgb(255, 255, 255);
+}
+
+.imagem{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    display: none;
+}
+
+.imagem.ativa{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+
+}
+
+
